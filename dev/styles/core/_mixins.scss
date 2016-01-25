@@ -1,0 +1,57 @@
+/*! mixins */
+
+//Transitions
+@mixin transition($properties: all, $duration: 0.3s, $easing: ease) {
+    @if length($properties) > 1 {
+        transition-property: $properties;
+        transition-duration: $duration;
+        transition-timing-function: $easing;
+    } @else {
+        transition: $properties $duration $easing;
+    }
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+@mixin button($baseColor, $text_color: white) {
+  display: inline-block;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font: 14px/100% $base-font-regular;
+  padding: 5px 10px;
+  background-color: $baseColor;
+  color: $text-color;
+  @include border-radius();
+
+	&:hover, &:focus {
+	    background-color: darken($baseColor, 10%);
+	}     
+	&:active {
+	    background-color: lighten( $baseColor, 10% );
+	} 
+}
+ 
+@mixin border-radius($radius: 4px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+ 
+@mixin gradient($from, $to) {
+  background: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+  background: -moz-linear-gradient(top,  $from, $to);
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}', endColorstr='#{$to}');
+}

@@ -1,0 +1,29 @@
+{
+  "name": "RockPaperScissors",
+  "version": "0.0.1",
+  "authors": [
+    "Giuseppe Volpicella"
+  ],
+  "description": "RockPaperScissors",
+  "license": "",
+  "homepage": "http://gvolpicella.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "mocha": "~2.3.4",
+    "chai": "~3.4.2"
+  },
+  "main": "build/index.html",
+  "moduleType": [],
+  "keywords": [
+    "Rock",
+    "Paper",
+    "Scissors"
+  ],
+  "private": true
+}

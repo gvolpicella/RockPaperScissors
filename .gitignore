@@ -1,0 +1,9 @@
+# Folders
+/.sass-cache
+/node_modules
+/bower_components
+
+# Files
+Thumbs.db
+npm-debug.log
+.DS_Store

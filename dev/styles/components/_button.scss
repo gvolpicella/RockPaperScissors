@@ -1,0 +1,35 @@
+// button default
+.btn {
+  border: none;
+  box-shadow: inset 0 0 -3px #fff, 1px 1px 2px #000;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+	text-transform: capitalize;
+	letter-spacing: 0.5pt;
+  color: white;
+  outline: none;
+  padding: 10px 40px;
+  margin-top: 10px;
+  @include border-radius();
+  @include transition(background-color 0.08s ease-out);
+  &.full-width {
+    width: 100%;
+  }
+  &:hover, &active, &:focus {
+    color: white;  
+    outline: none;
+  } 
+}
+
+// Color variants
+.btn-primary {
+    background: #00509d;
+    background: -webkit-gradient(linear,left top,left bottom,from(#0079bc),to(#00509d));
+    text-shadow:0 1px #00509d;
+  &:hover {
+    background: -webkit-gradient(linear,left top,left bottom,from(#028ad5),to(#00509d));
+  }
+  &:active {
+    background: -webkit-gradient(linear,left top,left bottom,from(#00509d),to(#00509d));
+  }
+}

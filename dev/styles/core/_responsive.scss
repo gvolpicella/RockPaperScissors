@@ -1,0 +1,51 @@
+// Responsive
+
+// ~tablet
+@media (max-width: $screen-medium) {
+
+	#main-view .player {
+		button {
+		    margin: 10px;
+		}
+	}
+
+}
+
+// ~mobile
+@media (max-width: $screen-small) {
+
+	#logo {
+		width: 30px;
+	}
+
+	#btn-start {
+		margin-top: 0;
+		min-width: 210px;
+	}
+
+	.btn-choose-player img {
+	    width: 64px;
+	}
+
+	#main-view .player {
+		button {
+		    margin: 4px auto;
+		    float: none;
+	    	img {
+		    	width: 66px;
+			}
+		}
+	}
+
+	.player {
+		padding: 5px;
+		max-width: 300px;
+		background-color: transparent;
+		border: none;
+	}
+
+	.separator {
+	    font-size: 20px;
+	}
+
+}

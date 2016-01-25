@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Rock, Paper, Scissors</title>
+        <meta name="description" content="Rock, Paper, Scissors">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- styles -->
+        <link rel="stylesheet" href="styles/main.min.css">
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <noscript><h1>Oops, it looks like your browser has JavaScript disabled!</h1></noscript>
+        
+        <div id="wrapper">
+
+            <div id="eBar"></div>
+
+            <!-- top menu -->
+            <header id="header" class="splash">
+                <div class="block">
+                    <img id="logo" src="images/logo.png" alt="RockPaperScissors" />
+                    <h1>Rock, Paper, Scissors</h1>
+                    <h2>- Giuseppe Volpicella -</h2>
+                    <nav>
+                        <button id="btn-start" class="btn btn-primary">Start a new game</button>
+                    </nav>
+                </div>
+            </header>
+
+            <h1 id="message">Choose your players</h1>
+
+            <!-- player 1 -->
+            <section id="player1-view" class="view">
+                <div class="player">
+                    <button id="btn-player1-human" class="btn btn-primary btn-choose-player">
+                        <img src="images/human.gif" alt="Human" />
+                        Human
+                    </button>
+                    <button id="btn-player1-computer" class="btn btn-primary btn-choose-player">
+                        <img src="images/computer.gif" alt="Computer" />
+                        Computer
+                    </button>
+                </div>
+            </section>
+
+
+            <!-- game board -->
+            <section id="main-view" class="view">
+                <div id="main-view-player1" class="player">
+                    <div id="player1-view-selection">
+                        <button id="btn-player1-rock" class="btn btn-primary btn-choose-move">
+                            <img src="images/rock.png" alt="Rock" />
+                            Rock
+                        </button>
+                        <button id="btn-player1-paper" class="btn btn-primary btn-choose-move">
+                            <img src="images/paper.png" alt="Paper" />
+                            Paper
+                        </button>
+                        <button id="btn-player1-scissors" class="btn btn-primary btn-choose-move">
+                            <img src="images/scissors.png" alt="Scissor" />
+                            Scissors
+                        </button>
+                    </div>
+                    <div id="player1-view-selected"></div>
+                </div>
+                <div class="separator">VS</div>
+                <div id="main-view-player2" class="player">
+                    <div id="player2-view-selection">
+                        <img src="images/computer.gif" alt="Computer" />
+                    </div>
+                    <div id="player2-view-selected"></div>
+                </div>
+            </section>
+
+            <!-- credits -->
+            <footer>
+                <small>Thanks for playing! - <a href="http://gvolpicella.com" rel="no-follow">Giuseppe</a>
+            </footer>
+
+        </div>
+
+        <!-- bottom scripts -->
+        <script src="scripts/main.min.js"></script>
+
+    </body>
+</html>

@@ -6,11 +6,11 @@ Install Node.js
 
 install Node modules
 
-`npm install -g`
+`npm install`
 
 install bower
 
-`npm install -g bower`
+`npm install bower`
 
 install bower dependencies
 
